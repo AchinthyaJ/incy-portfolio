@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>incy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>incy</h1>
+    </header>
+    <nav class="vertimenu">
+        <ul>
+            <li><a href="#slide1">About</a></li>
+            <li><a href="#slide3">Contact</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h1>Incy</h1>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <section id="slide1">
+                    <h2>Hi I am Incy. A second year degee student at DSCE. I am very intrested in machine learning and Artificial Intellingence</h3>
+                </section>
+                <section id="slide2">
+                    <h2>A few of my Projects are:</h3>
+                    <h2>
+                      <ul>
+                        <li>Stock Price Prediction Project</li>
+                        <li>Weather App</li>
+                        <li>Potato GPT</li>
+                      </ul>
+                    </h2>
+                </section>
+                <section id="slide3">
+                    <h2>Contact</h2>
+                </section>
+                <!-- Add more slides as needed -->
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+    </main>
+    <script>const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('section');
+        let currentIndex = 0;
+        
+        function setPositionByIndex() {
+            const translateValue = currentIndex * -window.innerWidth;
+            slider.style.transform = `translateX(${translateValue}px)`;
+        }
+        
+        function handleScroll(event) {
+            const delta = event.deltaY || event.detail || event.wheelDelta;
+        
+            if (delta > 0) {
+                // Scrolling down
+                if (currentIndex < slides.length - 1) {
+                    currentIndex++;
+                    setPositionByIndex();
+                }
+            } else {
+                // Scrolling up
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    setPositionByIndex();
+                }
+            }
+        }
+        
+        // Listen for scroll events
+        window.addEventListener('wheel', handleScroll, { passive: true });
+        window.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
+                // Scroll down or right
+                if (currentIndex < slides.length - 1) {
+                    currentIndex++;
+                    setPositionByIndex();
+                }
+            } else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
+                // Scroll up or left
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    setPositionByIndex();
+                }
+            }
+        });
+        
+        
+        </script>
+</body>
+</html>

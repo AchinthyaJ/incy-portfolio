@@ -1,0 +1,133 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh; /* Full viewport height */
+    background-color: black; /* Background color */
+    background-image: url('Background.png'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 182, 193);
+}
+
+.slider-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Hide overflow to show one slide at a time */
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
+    width: 300%; /* Adjust based on the number of slides (e.g., 3 slides = 300%) */
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+
+
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.vertimenu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.vertimenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.8);
+    border-right: 1px solid rgba(255, 182, 193, 0.3);
+    border-radius: 2px;
+}
+
+.vertimenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.vertimenu ul li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.vertimenu ul li a {
+    color: rgb(255, 182, 193);
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.vertimenu ul li a:hover {
+    background-color: rgba(255, 182, 193, 0.3);
+    padding-left: 30px;
+}
+
+main {
+    margin-left: 240px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h3 {
+    margin-right: 2px;
+}
+
+h1, h3 {
+    color: rgb(255, 182, 193);
+
+}
+
+h1{
+    position: absolute;
+}

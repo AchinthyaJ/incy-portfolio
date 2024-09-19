@@ -3,108 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>incy</title>
+    <title>Simplified Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="vertimenu">
-        <ul>
-            <li><a href="#slide1">About</a></li>
-            <li><a href="#slide2">Projects</a></li>
-            <li><a href="#slide3">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+    </header>
+    
     <main>
-        <div class="slider-container">
-            <div class="slider">
-                <section id="slide1">
-                    <img src="anya forger.png" class="slide-image">
-                    <div class="image-overlay"></div>
-                    <div class="content">
-                        <h2>Hi I am Incy.</h2>
-                        <h3>A second year engineering student.</h3>
-                        <h3>I am interested in machine learning and web dev.</h3>
-                    </div>
-                </section>
-                <section id="slide2">
-                    <img src="anya forger.png" class="slide-image">
-                    <div class="image-overlay"></div>
-                    <div class="content">
-                        <h3>A few of my Projects are:</h3>
-                        <ul>
-                            <li>Stock Price Prediction Project</li>
-                            <li>Micro-Doppler Based Target Classification</li>
-                            <li>Rag GPT</li>
-                        </ul>
-                    </div>
-                </section>
-                <section id="slide3">
-                    <img src="anya forger.png" class="slide-image">
-                    <div class="image-overlay"></div>
-                    <div class="content">
-                        <h3>Contact</h3>
-                        <p><img src="https://img.icons8.com/ios-glyphs/30/000000/twitter.png" alt="Twitter"> IncharaJ4</p>
-                        <p><img src="https://img.icons8.com/ios-glyphs/30/000000/discord-logo.png" alt="Discord"> yor1837</p>
-                    </div>
-                </section>
+        <div class="overlay">
+        <section id="hero">
+            <div class="hero-content">
+                <hr>
+                <h1>Hi, I am Incy.</h1>
+                <p>A second-year engineering student interested in machine learning and web development.</p>
             </div>
+        </section>
+        
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>A second-year engineering student with a passion for technology and learning.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                    <h3><strong>Stock Price Prediction App</strong></h3>
+                    <p>Leveraging machine learning to predict stock prices based on historical data.</p>
+                    <h3><strong>Micro-Doppler Based Target Classification</strong></h3>
+                    <p>Using machine learning models for target classification in radar signals.</p>
+                    <h3><strong>Rag GPT</strong></h3>
+                    <p>A personalized GPT model to enhance productivity.</p>
+                
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                
+                <p><strong>Languages:</strong> Python, JavaScript, HTML, CSS</p>
+                <p><strong>Frameworks:</strong> Flask, Django, TensorFlow, Keras</p>
+                <p><strong>Tools:</strong> Git, GitHub, Jupyter Notebook</p>
+                <p><strong>Cloud:</strong> Vercel, Heroku</p>
+                
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p><a href="https://twitter.com/IncharaJ4" target="_blank">Twitter</a></p>
+                <p><a href="https://discord.com" target="_blank">Discord</a></p>
+            </div>
+        </section>
+        <hr>
         </div>
     </main>
-    <script>
-        const slider = document.querySelector('.slider');
-        const slides = document.querySelectorAll('section');
-        let currentIndex = 0;
-
-        function setPositionByIndex() {
-            const translateValue = currentIndex * -window.innerWidth;
-            slider.style.transform = `translateX(${translateValue}px)`;
-
-            // Reset the image position every time the slide changes
-            const slideImages = document.querySelectorAll('.slide-image');
-            slideImages.forEach(image => {
-                image.style.left = '-220px'; // Reset to cover the menu bar
-            });
-        }
-
-        function handleScroll(event) {
-            const delta = event.deltaY || event.detail || event.wheelDelta;
-
-            if (delta > 0) {
-                // Scrolling down
-                if (currentIndex < slides.length - 1) {
-                    currentIndex++;
-                    setPositionByIndex();
-                }
-            } else {
-                // Scrolling up
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    setPositionByIndex();
-                }
-            }
-        }
-
-        // Listen for scroll events
-        window.addEventListener('wheel', handleScroll, { passive: true });
-        window.addEventListener('keydown', (event) => {
-            if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
-                // Scroll down or right
-                if (currentIndex < slides.length - 1) {
-                    currentIndex++;
-                    setPositionByIndex();
-                }
-            } else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
-                // Scroll up or left
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    setPositionByIndex();
-                }
-            }
-        });
-
-        // Set the initial position on load
-        window.onload = setPositionByIndex;
-    </script>
 </body>
 </html>
-

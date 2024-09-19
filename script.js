@@ -42,3 +42,18 @@ window.addEventListener('keydown', (event) => {
         }
     }
 });
+
+// Set the initial position on load
+window.onload = setPositionByIndex;
+
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('open');
+}
+
+
+window.onscroll = function() {
+    const scrollProgress = document.documentElement.scrollTop / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+    document.getElementById('progress-bar').style.width = scrollProgress + "%";
+};
+

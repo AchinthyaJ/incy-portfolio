@@ -11,76 +11,6 @@
     <title>Incy's</title>
 
     <link rel="stylesheet" href="styles.css" />
-
-    <style>
-      body {
-        text-align: center;
-      }
-
-      #socials a {
-        margin: 0 8px;
-        text-decoration: none;
-      }
-      #socials a img {
-        height: 32px;
-      }
-
-      #work-experience ul {
-        text-align: left;
-      }
-      #work-experience .work h3,
-      #work-experience .work h4 {
-        display: flex;
-        justify-content: space-between;
-      }
-      #work-experience .work details ul {
-        margin-top: 8px;
-        margin-left: 16px;
-      }
-
-      #skills > ul {
-        text-align: left;
-      }
-
-      #projects .project {
-        text-align: left;
-      }
-      #projects .project h3 {
-        margin-bottom: 0;
-        display: flex;
-        align-items: center;
-      }
-      #projects .project h3 img {
-        height: 14px;
-        margin-left: 12px;
-      }
-      #projects .project p {
-        margin-top: 8px;
-      }
-      #projects .project .project__source-code {
-        display: inline-block;
-        margin-top: 2px;
-      }
-
-      #blogs ul {
-        text-align: left;
-      }
-
-      span.separator-bar {
-        margin: 0 4px;
-      }
-
-      @media print {
-        #socials a {
-          display: inline-flex;
-          align-items: center;
-        }
-        #socials a img {
-          height: 16px;
-          margin-right: 4px;
-        }
-      }
-    </style>
   </head>
   <body>
     <h1 class="no-print">welcome.</h1>
@@ -117,33 +47,29 @@
     <section id="work-experience">
       <h2>work experience</h2>
       <small class="no-print">(you can click on the role summary to see the details)</small>
-
       <ul>
         <li class="work">
           <h3>
-            <span>Adapt</span>
+            <span>mirch media</span>
             <small>
-              <time datetime="2024-09-01">sept 2024</time>
-              -
-              <span>present</span>
+              <time datetime="2024-05-01">may 2024</time> -
+              <span>july 2024</span>
             </small>
           </h3>
           <ul>
             <li>
               <h4>
-                backend engineer
+                frontend web development intern
                 <small>
-                  <time datetime="2024-09-01">sept 2024</time>
+                  <time datetime="2024-05-01">may 2024</time> -
+                  <span>july 2024</span>
                 </small>
               </h4>
-
               <details>
-                <summary>backend engineering and managing cloud infra at Adapt.</summary>
+                <summary>designed and developed the frontend of websites for the company.</summary>
                 <ul>
-                  <li>
-                    wrote Terraform scripts to automate AWS infrastructure setup and management, including EC2 instances
-                    with cloud-init user-data, IAM roles, S3 buckets, ElastiCache, and ECR.
-                  </li>
+                  <li>utilized html, css, javascript, and wordpress to create engaging and responsive user interfaces.</li>
+                  <li>collaborated with backend developers to integrate apis and improve website functionality.</li>
                 </ul>
               </details>
             </li>
@@ -151,92 +77,26 @@
         </li>
         <li class="work">
           <h3>
-            <span>LaneSquare Technology Pvt. Ltd.</span>
+            <span>inzint pvt ltd</span>
             <small>
-              <time datetime="2023-02-20">feb 2023</time>
-              -
-              <time datetime="2024-09-06">sept 2024</time>
+              <time datetime="2024-04-01">april 2024</time> -
+              <time datetime="2024-08-31">august 2024</time>
             </small>
           </h3>
           <ul>
             <li>
               <h4>
-                software developer
+                video editing intern
                 <small>
-                  <time datetime="2023-09-01">sept 2023</time>
-                  -
-                  <time datetime="2023-09-06">sept 2024</time>
-                </small>
-              </h4>
-
-              <details>
-                <summary>
-                  built <a href="https://thinkstack.ai" target="_blank">thinkstack.ai</a>, a platform where businesses
-                  can create customer support chatbots.
-                </summary>
-                <ul>
-                  <li>
-                    developed backend services for ThinkstackAI - GraphQL with Node.js, REST APIs with Flask (Python),
-                    Redis for caching and S3 for file management.
-                  </li>
-                  <li>
-                    implemented Retrieval Augmented Generation (RAG) for LLM in Thinkstack: chunking user data,
-                    generating embeddings, and storing them in Pinecone (and later querying them with similarity search
-                    of course).
-                  </li>
-                  <li>
-                    developed Thinkstack's frontend (<a href="https://app.thinkstack.ai/login" target="_blank"
-                      >app.thinkstack.ai</a
-                    >) in React.js and Tailwind CSS, while optimizing for performance through the use of memoization and
-                    debouncing.
-                  </li>
-                  <li>
-                    created an event notification system using pub/sub to send backend events (e.g., website crawling
-                    completion) to the frontend, which uses a React context provider component that i built to consume
-                    these events and perform some actions.
-                  </li>
-                  <li>
-                    built sub-users, roles and permissions management system for the app - both backend and frontend.
-                  </li>
-                  <li>
-                    created Zapier, Slack and WhatsApp integrations for Thinkstack. also built its API key management
-                    system for authentication.
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <h4>
-                software developer intern
-                <small>
-                  <time datetime="2023-02-20">feb 2023</time>
-                  -
-                  <time datetime="2023-08-31">aug 2023</time>
+                  <time datetime="2024-04-01">april 2024</time> -
+                  <time datetime="2024-08-31">august 2024</time>
                 </small>
               </h4>
               <details>
-                <summary>
-                  migrated <a href="https://www.pickcel.com/">Pickcel</a>'s backend codebase from node 12 to node 18.
-                  also learnt Docker.
-                </summary>
+                <summary>edited and remastered videos for the company's social media platforms.</summary>
                 <ul>
-                  <li>
-                    worked with TypeScript, Node.js, and Mongoose based codebase to update and optimize existing REST
-                    APIs, creating new ones, and overall improving the code quality.
-                  </li>
-                  <li>
-                    optimized Dockerfile for our on-premise setup by properly reordering layers, reducing consecutive
-                    build times and improving cache utilization. also added redis to the stack.
-                  </li>
-                  <li>set up integration testing from scratch using Jest, SuperTest and GitHub Actions.</li>
-                  <li>
-                    built a custom Ubuntu 20.04 ISO featuring automated installation and Docker setup, facilitating
-                    swift deployment of containers on system startup.
-                  </li>
-                  <li>
-                    introduced semantic git commits, coding conventions, and structure, which is now embraced by all
-                    developers in the organization.
-                  </li>
+                  <li>created engaging short-form content that increased viewership by 10% on social media.</li>
+                  <li>collaborated with the marketing team to understand video requirements and deliver high-quality outputs.</li>
                 </ul>
               </details>
             </li>
@@ -244,6 +104,7 @@
         </li>
       </ul>
     </section>
+    
 
     <hr />
 
@@ -251,206 +112,87 @@
       <section id="skills">
         <h2>skills</h2>
         <ul>
-          <li><strong>programming languages:</strong> <span>JavaScript (TypeScript), Python, Go, C, Bash</span></li>
-          <li><strong>libraries & frameworks:</strong> <span>React, Node.js, Express.js, Flask</span></li>
-          <li><strong>tools & infra:</strong> <span>Docker, Git, Linux, AWS, GitHub Actions</span></li>
-          <li><strong>database:</strong> <span>MySQL/MariaDB, MongoDB, Redis, SQLite</span></li>
+          <li><strong>languages:</strong> <span>python, javascript, c++</span></li>
+          <li><strong>operating systems:</strong> <span>linux, windows</span></li>
+          <li><strong>frameworks:</strong> <span>flask, streamlit, wordpress, svelte, react.js, node.js</span></li>
+          <li><strong>libraries:</strong> <span>pytorch, numpy, scikit-learn, matplotlib, tensorflow, pandas, seaborn</span></li>
+          <li><strong>databases:</strong> <span>postgresql, mongodb</span></li>
+          <li><strong>deployment:</strong> <span>aws, docker</span></li>
+          <li><strong>developer tools:</strong> <span>vs code, google colab, git, github, jupyter notebook, docker, kubernetes</span></li>
         </ul>
       </section>
-
       <hr />
     </div>
+    
 
     <section id="projects">
-      <h2>projects</h2>
+      <h2>Projects</h2>
       <div class="project">
         <h3>
-          TCP Server
-          <img src="/images/icons/c.svg" alt="C" />
+          micro-classify
+          <img src="python.svg" alt="Python" />
+          <img src="javascript.svg" alt="JavaScript" />
         </h3>
         <p>
-          a single-threaded TCP server written in C with an event loop using the <code>poll()</code> system call,
-          without any third-party library. the server listens on a port and echoes back received data. i've also written
-          a simple client to test the server.
+          developed a machine learning model to classify low RCS aerial targets of 6 different classes (e.g., drones, birds) using micro-doppler radar signatures. implemented <strong>attention-based CNN</strong> and <strong>LSTM</strong> models for improved feature extraction and sequence prediction. utilized <strong>ACGANs</strong> to augment a limited dataset. deployed the model on a web application, hosted via <strong>docker</strong> and <strong>AWS EC2</strong>, for real-time classification.
           <br />
-          <a class="project__source-code" href="https://github.com/biraj21/tcp-server" target="_blank">source code</a>
+          tech stack: python (pytorch, scikit-learn, matplotlib), flask, html, css, javascript, docker, aws ec2
+          <br />
+          model achieved an accuracy of 99.18% and an F1-score of 0.99.
+          <br />
+          <a class="project__source-code" href="https://microclassify.streamlit.app/" target="_blank">deployed link: microclassify.streamlit.app</a>
         </p>
       </div>
+    
       <div class="project">
         <h3>
-          focker: linux containers
-          <img src="/images/icons/go.svg" alt="Go" />
+          stock price prediction project
+          <img src="python.svg" alt="Python" />
         </h3>
         <p>
-          Focker is a toy container runtime written in Go. it is based on Ubuntu 22.04 rootfs. this was an attempt to
-          understand how Docker works internally.
+          fetched <strong>20 years of stock data</strong> using the <strong>yfinance</strong> library. implemented various algorithms and techniques such as <strong>LSTM</strong> for time series forecasting using libraries like tensorflow, scikit-learn, and keras. evaluated the model's performance using metrics like <strong>root mean square error</strong> (RMSE).
           <br />
-          <a class="project__source-code" href="https://github.com/biraj21/web-wanderer" target="_blank">source code</a>
+          <a class="project__source-code" href="https://stock-price-prediction-project.streamlit.app/" target="_blank">deployed link: stock-price-prediction-project.streamlit.app</a>
         </p>
       </div>
+    
       <div class="project">
         <h3>
-          NumPy from scratch in Go
-          <img src="/images/icons/go.svg" alt="Go" />
+          online chat app using socket programming
+          <img src="python.svg" alt="Python" />
         </h3>
         <p>
-          i am implementing Neural Networks from scratch in Go and as a byproduct of it, i also created my own version
-          of NumPy for tensor operations like +, -, *, /, matrix multiplication, transpose etc. it also supports
-          <a href="https://numpy.org/doc/stable/user/basics.broadcasting.html">broadcasting</a>.
-          <br />
-          <a class="project__source-code" href="https://github.com/biraj21/neural-networks-from-scratch" target="_blank"
-            >source code</a
-          >
+          developed both the front-end and back-end of the online chat app using <strong>socket programming</strong> in python.
         </p>
       </div>
+    
       <div class="project">
         <h3>
-          web wanderer
-          <img src="/images/icons/python.svg" alt="Python" />
+          custom search page
+          <img src="javascript.svg" alt="JavaScript" />
         </h3>
         <p>
-          web wanderer is a multi-threaded web crawler written in Python. it uses
-          <code>concurrent.futures.ThreadPoolExecutor</code> and
-          <a href="https://playwright.dev/" target="_blank">Playwright</a> to crawl and download web pages. it handles
-          dynamically rendered websites, making it capable of extracting content from modern web applications.
+          created a custom search landing page for any browser that allows the user to access all important links in one click and search under any platform in the same search bar.
           <br />
-          <a class="project__source-code" href="https://github.com/biraj21/web-wanderer" target="_blank">source code</a>
+          <a class="project__source-code" href="https://startup-page-omega.vercel.app/" target="_blank">deployed link: startup-page-omega.vercel.app</a>
         </p>
       </div>
+    
+      <!-- Placeholder for additional projects -->
       <div class="project">
         <h3>
-          JSON parser
-          <img src="/images/icons/go.svg" alt="Go" />
+          additional projects
         </h3>
         <p>
-          a JSON parser written in Go from scratch. it prints error message with line and column number.
-          <a href="https://github.com/eatonphil" target="_blank">Phil Eaton</a>'s
-          <a href="https://notes.eatonphil.com/writing-a-simple-json-parser.html" target="_blank">blog post</a>
-          helped me write the lexer and parser. it was fun.
-          <br />
-          <a class="project__source-code" href="https://github.com/biraj21/json-parser" target="_blank">source code</a>
-        </p>
-      </div>
-      <div class="project">
-        <h3>
-          texterm
-          <img src="/images/icons/c.svg" alt="C" />
-        </h3>
-        <p>
-          it is a very minimal, nano-like text editor written in C from scratch, using only the standard library. i
-          followed
-          <a href="https://viewsourcecode.org/snaptoken/kilo/" target="_blank">Build Your Own Text Editor</a>
-          tutorial. i learnt a lot about C and linux terminals while implementing this.
-          <br />
-          <a class="project__source-code" href="https://github.com/biraj21/texterm" target="_blank">source code</a>
-        </p>
-      </div>
-      <div class="project">
-        <h3>
-          array (or tensor) visualizer
-          <img src="/images/icons/javascript.svg" alt="JavaScript" />
-        </h3>
-        <p>
-          it's a simple tool that helps you visualize multi-dimensional arrays. it uses HTML canvas for rendering the
-          image. i wrote this when i was trying to understand neural networks.
-          <br />
-          <a class="project__source-code" href="https://github.com/biraj21/array-visualizer" target="_blank"
-            >source code</a
-          >
-          <span class="separator-bar">|</span>
-          <a href="https://arrayvis.netlify.app/" target="_blank">try it</a>
-        </p>
-      </div>
-      <div class="project">
-        <h3>
-          findREp
-          <img src="/images/icons/python.svg" alt="Python" />
-        </h3>
-        <p>
-          a simple GUI tool written with Tkinter in Python to find and replace all the matches of a regular expression
-          in files. you can either select the files directly or select a folder, in which case it will recursively look
-          for matches in files inside the subfolders. i wrote this because i wasn't aware of VS Code's search
-          functionality at the time.
-          <br />
-          <a class="project__source-code" href="https://github.com/biraj21/findrep" target="_blank">source code</a>
-        </p>
-      </div>
-      <div class="project">
-        <h3>
-          brainfuck interpreter
-          <img src="/images/icons/c.svg" alt="C" />
-        </h3>
-        <p>
-          a
-          <a href="https://en.wikipedia.org/wiki/Brainfuck" target="_blank">Brainfuck</a>
-          interpreter written in C. it can also transpile Brainfuck programs to C. this interpreter takes about 45
-          seconds to run
-          <a href="https://github.com/erikdubbelboer" target="_blank">Erik Dubbelboer</a>'s
-          <a href="https://github.com/erikdubbelboer/brainfuck-jit/blob/master/mandelbrot.bf" target="_blank"
-            >Mandelbrot program</a
-          >.
-          <br />
-          <a class="project__source-code" href="https://github.com/biraj21/brainfuck-interpreter" target="_blank"
-            >source code</a
-          >
+          placeholder text for additional projects not yet displayed.
         </p>
       </div>
     </section>
-
-    <hr />
-
-    <section id="blogs">
-      <h2>blogs</h2>
-
-      <ul>
-        <li>
-          <a href="http://biraj21.github.io/blogs/empty-strings-and-zero-length-arrays.html"
-            >Empty Strings and Zero-length Arrays: How do We Store... Nothing?</a
-          >
-        </li>
-        <li>
-          <a href="https://dev.to/biraj21/introduction-to-numpy-31md" target="_blank">Introduction to NumPy</a>
-        </li>
-        <li>
-          <a href="https://dev.to/biraj21/javascript-array-methods-understand-by-implementing-54g3" target="_blank"
-            >Understand JavaScript Array Methods By Implementing Them</a
-          >
-        </li>
-        <li>
-          <a href="https://biraj21.medium.com/what-are-pointers-in-c-d21efd5e41dc" target="_blank"
-            >What are Pointers in C? (shallow explanation)</a
-          >
-        </li>
-        <li>
-          <a href="https://biraj21.medium.com/what-are-radians-657a3e6ea913" target="_blank">What are Radians?</a>
-        </li>
-        <li>
-          <a href="https://biraj21.medium.com/what-are-number-systems-2cd7a5df9220" target="_blank"
-            >What are number systems?</a
-          >
-        </li>
-        <li>
-          <a href="https://biraj21.medium.com/what-is-speed-d866c91d24cc" target="_blank">What is speed?</a>
-        </li>
-      </ul>
-    </section>
-
-    <hr class="no-print" />
-
+    
+    
     <footer class="no-print">
-      <a href="mailto:biraj.pub@gmail.com">biraj.pub@gmail.com</a>
-      <p>no copyright. feel free to copy this stunning website.</p>
-      <p>
-        ps: wanna check out the inferior version of this site? head over to
-        <a href="https://biraj21.netlify.app" target="_blank">biraj21.netlify.app</a>.
-      </p>
+      thank you for visiting! feel free to reach out via my social links.
     </footer>
-
-    <script>
-      // open all details elements before opening print dialog to ensure that all content is printed
-      window.addEventListener("beforeprint", () => {
-        document.querySelectorAll("details").forEach(($details) => $details.setAttribute("open", "open"));
-      });
-    </script>
+    
   </body>
 </html>

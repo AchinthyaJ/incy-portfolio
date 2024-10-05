@@ -1,74 +1,95 @@
 body {
-    text-align: center;
-    align-items: center;
-    padding-right: 20%;
-    padding-left: 20%;
-  }
+  text-align: center;
+  align-items: center;
+  padding-right: 20%;
+  padding-left: 20%;
+}
 
+#socials a {
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+#socials a img {
+  height: 32px;
+}
+
+#work-experience ul {
+  text-align: left;
+}
+
+#work-experience .work h3,
+#work-experience .work h4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#work-experience .work details ul {
+  margin-top: 8px;
+  margin-left: 16px;
+}
+
+#skills > ul {
+  text-align: left;
+}
+
+#projects .project {
+  text-align: left;
+}
+
+#projects .project h3 {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+#projects .project h3 img {
+  height: 14px;
+  margin-left: 12px;
+}
+
+#projects .project p {
+  margin-top: 8px;
+}
+
+#projects .project .project__source-code {
+  display: inline-block;
+  margin-top: 2px;
+}
+
+#blogs ul {
+  text-align: left;
+}
+
+span.separator-bar {
+  margin: 0 4px;
+}
+
+footer.no-print {
+  background-color: #f8f9fa; /* Light background color for contrast */
+  padding: 20px; /* Increased padding */
+  text-align: center; /* Center the text */
+  font-size: 18px; /* Larger font size */
+  border-top: 1px solid #dee2e6; /* Optional border for separation */
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+footer.no-print a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+footer.no-print a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+@media print {
   #socials a {
-    margin: 0 8px;
-    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
   }
   #socials a img {
-    height: 32px;
+    height: 16px;
+    margin-right: 4px;
   }
-
-  #work-experience ul {
-    text-align: left;
-  }
-  #work-experience .work h3,
-  #work-experience .work h4 {
-    display: flex;
-    justify-content: space-between;
-  }
-  #work-experience .work details ul {
-    margin-top: 8px;
-    margin-left: 16px;
-  }
-
-  #skills > ul {
-    text-align: left;
-  }
-
-  #projects .project {
-    text-align: left;
-  }
-  #projects .project h3 {
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-  }
-  #projects .project h3 img {
-    height: 14px;
-    margin-left: 12px;
-  }
-  #projects .project p {
-    margin-top: 8px;
-  }
-  #projects .project .project__source-code {
-    display: inline-block;
-    margin-top: 2px;
-  }
-
-  #blogs ul {
-    text-align: left;
-  }
-
-  span.separator-bar {
-    margin: 0 4px;
-  }
-
-  @media print {
-    #socials a {
-      display: inline-flex;
-      align-items: center;
-    }
-    #socials a img {
-      height: 16px;
-      margin-right: 4px;
-    }
-  }
-
-
-
-
+}
